@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+struct movie
+{
+    char* title;
+    int runtime;
+    char* genre;
+};
+
+int main()
+{
+    struct movie movie1,movie2;
+    
+    movie1.title="Mahanati";
+    movie1.runtime=177;
+    movie1.genre="Biography";
+    
+    movie2.title="Baahubali";
+    movie2.runtime=160;
+    movie2.genre="Epic";
+    
+    
+    
+    
+    printf("  moviename is:%s\n",movie1.title);
+    printf("  running time of %s movie is:%d minutes\n",movie1.title,movie1.runtime);
+    printf("  genre of %s movie is: %s \n",movie1.title,movie1.genre);
+    printf("\n");
+    
+    printf("  moviename is:%s\n",movie2.title);
+    printf("  running time of %s movie is:%d minutes\n",movie2.title,movie2.runtime);
+    printf("  genre of %s movie is: %s \n",movie2.title,movie2.genre);
+    
+    
+    
+
+    return 0;
+}
